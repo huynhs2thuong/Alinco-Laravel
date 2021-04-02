@@ -1,0 +1,451 @@
+body {
+    background-color: $color-05;
+  }
+  .blog-detail {
+    // width: 100vw;
+    // min-height: 100vh;
+    position: relative;
+    // overflow: hidden;
+    .menu-blogs {
+      margin-top: 5rem;
+      @include for-size(991) {
+        padding-top: 0;
+        margin-top: 2rem;
+      }
+      .navbar {
+        margin-right: -3rem;
+      @include for-size(1499) {
+        margin-right: -2.9rem;
+      }
+      @include for-size(1199) {
+        margin-right: -1.9rem;
+      }
+      @include for-size(991) {
+        margin-right: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+        .navbar-brand {
+          margin-right: 0;
+          text-align: right;
+          padding: 0 3rem;
+          padding-bottom: 0.2rem;
+          @include for-size(991) {
+            margin-right: 2rem;
+          }
+          img {
+            max-height: 2.4rem;
+            @include for-size(1499) {
+              max-width: 60%;
+            }
+            @include for-size(1199) {
+              max-width: 50%;
+            }
+          }
+        }
+        z-index: 1;
+        .navbar-collapse {
+          .navbar-nav {
+            @include for-size(991) {
+              padding-top: 1rem;
+            }
+            .nav-item {
+              position: relative;
+              @include for-size(991) {
+                margin-bottom: 0.6rem;
+              }
+              @include for-size(767) {
+                margin-bottom: 1rem;
+              }
+              &:nth-child(1) {
+                margin-left: 3rem;
+                @include for-size(1499) {
+                  margin-left: 1rem;
+                }
+                @include for-size(1199) {
+                  margin-left: 1rem;
+                }
+              }
+              .dropdown-menu.show {
+                top: 2.2rem;
+                background: none;
+                text-align: center;
+                width: calc(100%);
+                min-width: unset;
+                border: unset;
+                .dropdown-item {
+                  color: $color-06;
+                  letter-spacing: 6px;
+                  line-height: 1.7rem;
+                  text-transform: uppercase;
+                  font: {
+                    family: "HelveticaNeue";
+                  }
+                  @include for-size(991) {
+                    letter-spacing: 4px;
+                  }
+                  &:hover {
+                    background: none;
+                  }
+                }
+              }
+              .nav-link {
+                padding: 0rem 3rem;
+                color: $color-06;
+                letter-spacing: 6px;
+                line-height: 1.7rem;
+                text-transform: uppercase;
+                font: {
+                  family: "HelveticaNeue";
+                }
+                &.dropdown-toggle::after {
+                  content: none;
+                }
+                @include for-size(1499) {
+                  padding: 0rem 3rem;
+                }
+                @include for-size(1199) {
+                  padding: 0rem 2rem;
+                }
+                @include for-size(991) {
+                  text-align: right;
+                  padding: 0;
+                  letter-spacing: 4px;
+                  margin-bottom: 0.5rem;
+                }
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -0.5rem;
+                left: 50%;
+                transform: translateX(
+                  calc(-50% - 0.3rem)
+                ); //-0.3 rem because of letter-spacing: 6px;
+                width: 0%;
+                height: 1px;
+                background-color: $color-06;
+                transition: all ease 0.5s;
+                @include for-size(1499) {
+                  bottom: -0.3rem;
+                }
+                @include for-size(1199) {
+                  bottom: 0;
+                }
+                @include for-size(991) {
+                  bottom: 0.4rem;
+                  left: unset;
+                  transform: unset;
+                  background-color: $color-06;
+                  right: 0;
+                }
+              }
+              &:hover,
+              &.active {
+                &::after {
+                  width: calc(100% - 6.5rem);
+                @include for-size(1499) {
+                  width: calc(100% - 6.5rem);
+                }
+                @include for-size(1199) {
+                  width: calc(100% - 4.5rem);
+                }
+                @include for-size(991) {
+                  width: 0rem;
+                }
+                }
+              }
+            }
+          }
+        }
+      }
+      .nav2{
+        @include for-size(1199) {
+        height: 70px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        }
+        @include for-size(991) {
+        padding-right: 3.5rem
+        }
+      }
+      .social {
+        &__menu {
+          font-size: 2rem;
+          @include for-size(1499) {
+            font-size: 1.7rem;
+          }
+          @include for-size(1199) {
+            font-size: 1.4rem;
+          }
+          &__item {
+            display: inline;
+            padding-left: 1.5rem;
+            @include for-size(1199) {
+              padding-left: 0.8rem;
+            }
+            a {
+              color: $color-06;
+            }
+            &:nth-child(1):hover {
+              a {
+                color: #4267b2;
+              }
+            }
+            &:nth-child(2):hover {
+              a {
+                color: #ff0000;
+              }
+            }
+            &:nth-child(3):hover {
+              a {
+                color: #ffdc80;
+              }
+            }
+          }
+        }
+      }
+    }
+    .blog-detail-content {
+      padding-top: 5rem;
+      @include for-size(991) {
+        padding-top: 3rem;
+      }
+      .modal-list {
+        .nav-tabs {
+          margin-left: -3.8rem;
+          @include for-size(1499) {
+            margin-left: -2.8rem;
+          }
+          @include for-size(1199) {
+            margin-left: -1.75rem;
+          }
+          @include for-size(991) {
+            margin-left: -1rem;
+          }
+          border: none;
+          .nav-link {
+            position: relative;
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            color: $color-04;
+            padding: 0 4rem;
+            letter-spacing: 6px;
+            line-height: 1.7rem;
+            font: {
+              family: "HelveticaNeue";
+            }
+            @include for-size(1499) {
+              padding: 0 3rem;
+            }
+            @include for-size(1199) {
+              padding: 0px 1.75rem;
+            }
+            @include for-size(991) {
+              letter-spacing: 4px;
+              padding: 0px 1rem;
+              padding-bottom: 1rem;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -0.3rem;
+              left: 50%;
+              transform: translateX(
+                calc(-50% - 0.2rem)
+              ); //-0.2 rem because of letter-spacing: 4px;
+              width: 0%;
+              height: 1px;
+              background-color: $color-03;
+              transition: all ease 0.5s;
+              @include for-size(1199) {
+                bottom: 0;
+              }
+              @include for-size(991) {
+                bottom: 1rem;
+                background-color: $color-06;
+                right: 0;
+              }
+            }
+            &:hover,
+            &.active {
+              color: $color-03;
+              &::after {
+                width: calc(100% - 8rem);
+              @include for-size(1499) {
+                width: calc(100% - 6.3rem);
+              }
+              @include for-size(1199) {
+                width: calc(100% - 4rem);
+              }
+              @include for-size(991) {
+                width: calc(100% - 2rem);
+              }
+              }
+            }
+          }
+        }
+      }
+      .row {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        @include for-size(991) {
+          border-top: 1px solid #dee2e6;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          margin-top: 1rem;
+        }
+      }
+      .about {
+        &-text {
+          p {
+            padding-top: 1.5rem;
+            line-height: 36px;
+          }
+        }
+      }
+      &-text {
+        color: $color-06;
+        & .text {
+          &__name {
+            padding-top: 5rem;
+            text-transform: uppercase;;
+            letter-spacing: 4px;
+            font: {
+              family: "HelveticaNeue";
+            }
+            @include for-size(1499) {
+              padding-top: 4.5rem;
+            }
+            @include for-size(991) {
+            }
+            @include for-size(575) {
+              padding-top: 0;
+              margin-top: 2rem;
+            }
+          }
+          &__description {
+            // padding-top: 1rem;
+            padding-top: 1.5rem;
+            line-height: 36px;
+            
+            // @include for-size(1499) {
+            //   padding-top: 1rem;
+            // }
+            @include for-size(991) {
+            }
+          }
+          &__content {
+            padding-top: 1.5rem;
+            p {
+              padding-top: 1.5rem;
+              line-height: 36px;
+            }
+            
+            @include for-size(1499) {
+              padding-top: 1rem;
+            }
+            @include for-size(991) {
+            }
+            @include for-size(575) {
+              padding-bottom: 1.5rem;
+            }
+          }
+        }
+        img {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+      }
+      &-related {
+        padding: 5rem 0 0 0;
+        .related {
+          &-title {
+            color: $color-06;
+            letter-spacing: 6px;
+            font: {
+              family: "HelveticaNeue-Light";
+            }
+            @include for-size(1499) {
+              letter-spacing: 6px;
+            }
+            @include for-size(991) {
+              letter-spacing: 4px;
+            }
+          }
+          &-slider {
+            padding-top: 2rem;
+            @include for-size(1199) {
+              padding-top: 2rem;
+            }
+            .slick-list {
+              margin: 0 -1.5rem;
+              .slick-slide {
+                margin: 0 1.5rem;
+                &:focus {
+                  outline: 0 !important;
+                }
+                & > div:nth-child(2) {
+                  margin-top: 2.3rem;
+                }
+              }
+              .related-slider-item {
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                &::before {
+                  content: "";
+                  display: block;
+                  padding-top: 67%;
+                }
+                &::after {
+                  content: "OVERVIEW";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 0%;
+                  overflow: hidden;
+                  background-color: rgba($color: $color-01, $alpha: 0.8);
+                  transition: all ease 0.5s;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font: {
+                    family: "HelveticaNeue";
+                  }
+                  letter-spacing: 6px;
+                  color: $color-03;
+                  outline: 1px solid #555555;
+                  outline-offset: -15px;
+                  @include for-size(991) {
+                    content: unset;
+                  }
+                }
+                &__image {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  transition: all ease 0.5s;
+                }
+                &:hover {
+                  .related-slider-item__image {
+                    transform: scale(1.15);
+                  }
+                  &.related-slider-item::after {
+                    height: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  

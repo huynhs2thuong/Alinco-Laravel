@@ -1,0 +1,89 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  letter-spacing: 2px;
+  font: {
+    size: 1.7rem;
+    family: "HelveticaNeue";
+  }
+  @include for-size(1499) {
+    font-size: 1.5rem;
+  }
+  @include for-size(1199) {
+    font-size: 1.3rem;
+  }
+  #body-wrapper {
+    overflow: hidden;
+  }
+}
+.container {
+  @include for-size(1200) {
+    max-width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+figure,
+figcaption,
+label {
+  padding: 0;
+  margin: 0;
+}
+// h1,h2,h3,h4,h5,h6 {
+//     line-height: 1;
+//     font-size: inherit;
+//     font-weight: inherit;
+// }
+a {
+  text-decoration: none;
+  @include transition(all 0.3s ease);
+  &:hover {
+    text-decoration: none;
+  }
+}
+button {
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+ul {
+  list-style: none;
+}
+.custom-container {
+  position: relative;
+  margin: 0 3rem;
+  @include for-size(1499) {
+    position: relative;
+    margin: 0 2.5rem;
+  }
+  @include for-size(1199) {
+    position: relative;
+    margin: 0 2rem;
+  }
+}

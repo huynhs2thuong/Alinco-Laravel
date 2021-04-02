@@ -1,0 +1,28 @@
+@media(max-width:480px) {
+	#chuongtrinh {
+		position: relative !important;
+	}
+}
+
+.slick-list {
+	-webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0)), color-stop(0.4, rgba(0,0,0,1)), color-stop(0.6, rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+/* .fix_2000_2030 {
+	padding-top: 80px !important;
+} */
+.back_div {
+	position: relative;
+ 	max-width: 100%;
+}
+	
+.youtube_iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	top: 0;
+	left: 0;
+}
+.back_image {
+	
+}

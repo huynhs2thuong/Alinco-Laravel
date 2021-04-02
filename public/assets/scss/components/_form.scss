@@ -1,0 +1,214 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid $color-02 !important;
+  -webkit-text-fill-color: $color-02 !important;
+  -webkit-box-shadow: 0 0 0px 1000px $color-01 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#contact_form {
+  
+}
+.label {
+  @include for-size(575) {
+    font-size: 1.2rem;
+  }
+}
+.form-group {
+  margin-bottom: 2rem;
+  @include for-size(575) {
+    margin-bottom: 0.5rem;
+  }
+}
+.form-control,
+select.form-control:not([size]):not([multiple]) {
+  height: 4.5rem;
+  color: $color-03;
+  font-family: inherit;
+  padding: 0 1.5rem;
+  border: none;
+  border: 1px solid $color-04;
+  font-size: 1.7rem;
+  background: transparent;
+  border-radius: 0;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  @include for-size(1499) {
+    font-size: 1.2rem;
+  }
+  @include for-size(1199) {
+    font-size: 1rem;
+  }
+  @include for-size(991) {
+    height: 3.5rem;
+    padding: 0 1rem;
+    margin-bottom: 0;
+  }
+  @include for-size(575) {
+    // font-size: 1.3rem;
+  }
+  // @include for-size(575) {
+  //   height: 4rem;
+  // }
+  &::-webkit-input-placeholder {
+    color: $color-04;
+  }
+  &::-moz-placeholder {
+    color: $color-04;
+  }
+  &:-ms-input-placeholder {
+    color: $color-04;
+  }
+  &:-moz-placeholder {
+    color: $color-04;
+  }
+  &:focus {
+    color: $color-03;
+    box-shadow: unset;
+    border-color: $color-03 ;
+    background: transparent;
+  }
+}
+textarea.form-control {
+  min-height: 4.5rem;
+  height: unset;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+select.form-control:not([size]):not([multiple]) {
+  -webkit-appearance: none;
+  background-image: url(".././images/vnw_logistic/polygon.png");
+  background-repeat: no-repeat;
+  background-position: 96% center;
+}
+.input-group {
+  border-bottom: none;
+}
+.upfile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  // .div-input-file {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   right: 0;
+  // }
+  .div-input-file-center {
+    position: absolute;
+    right: 1.5rem;
+    line-height: 1;
+    @include for-size(575) {
+      font-size: 1.2rem;
+      top: 0.5rem;
+    }
+  }
+}
+.input-file-reply {
+  font-size: 1.5rem;
+  font-family: "Montserrat-Italic";
+  color: $color-05;
+  @include for-size(575) {
+    font-size: 1.1rem;
+  }
+}
+
+.submit-form {
+  position: relative;
+  letter-spacing: 2px;
+  font: {
+    family: "HelveticaNeue";
+  }
+  padding: 0rem 2.5rem;
+  border-radius: 0.6rem;
+  color: $color-06;
+  background: none;
+  transition: all ease 0.5s;
+  border: none;
+  border-radius: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.8rem;
+    left: 50%;
+    transform: translateX(
+      calc(-50% - 0.3rem)
+    ); //-0.3 rem because of letter-spacing: 6px;
+    width: 0%;
+    height: 1px;
+    background-color: $color-06;
+    transition: all ease 0.5s;
+  }
+  &:hover,
+  &.active {
+    &::after {
+      width: calc(100% - 3rem);
+    }
+  }
+  cursor: pointer;
+  @include transition(all 0.3s ease);
+  &:focus {
+    outline: 0;
+  }
+  @include for-size(575) {
+    width: 100%;
+    max-width: 18rem;
+    padding: 1rem 3rem;
+  }
+}
+.buttonload {
+  border: none;
+  color: $color-01;
+  background-color: transparent;
+}
+.upload_cv_label {
+  padding-left: 3rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: $color-03;
+  text-transform: uppercase;
+}
+.span-click {
+  color: $color-01;
+  background-color: $color-03;
+  line-height: 1;
+  padding: .8rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+}
+.input-file-nop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+// .input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+// 	border-top-right-radius: .5rem;
+//     border-bottom-right-radius: .5rem;
+// }
+
+.has-success {
+  border-color: #2ca94d !important;
+  box-shadow: none;
+}
+
+.has-error {
+  border-color: #ff0000 !important;
+  box-shadow: none;
+}

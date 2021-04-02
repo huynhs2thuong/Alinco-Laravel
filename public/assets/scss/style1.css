@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("../fonts/Montserrat/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Black.woff") format("woff"); }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"); }
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"); }
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"); }
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("../fonts/Montserrat/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Thin.woff") format("woff"); }
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url("../fonts/Montserrat/Montserrat-Italic.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Italic.woff") format("woff"); }
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"); }
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"); }
+/* Homepage section*/
+.bt-register-now {
+  box-shadow: black 2px 2px 4px;
+  width: 150px; }
+
+section#homepage {
+  height: 1068px;
+  background-image: url("../images/uniqlo/homepage_bg_1200.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative; }
+  section#homepage #homepage_content {
+    position: absolute;
+    right: 0;
+    top: 160px;
+    width: 616px; }
+    section#homepage #homepage_content #contact_form {
+      border-top: 8px solid #334149; }
+
+#main_content {
+  height: 2350px;
+  background-image: url("../images/uniqlo/benefit_bg_1200.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: relative; }
+  #main_content .redline_div {
+    height: 180px;
+    background: #d8292f; }
+    #main_content .redline_div #benefit_title {
+      font-family: "Montserrat-SemiBold";
+      font-size: 75px;
+      color: #fff; }
+  #main_content .title {
+    font-family: "Montserrat-SemiBold";
+    font-size: 75px;
+    color: #d8292f; }
+  #main_content .box-scroll {
+    text-justify: inter-word;
+    color: #282f39;
+    font-family: "Montserrat-Light"; }
+    #main_content .box-scroll span {
+      color: #d8292f;
+      font-family: "Montserrat-Bold"; }
+    #main_content .box-scroll strong {
+      color: #282f39;
+      font-family: "Montserrat-Bold"; }
+    #main_content .box-scroll .scrollbar-track-y {
+      width: 4px;
+      background: #e1d8d7;
+      border-radius: 4px; }
+      #main_content .box-scroll .scrollbar-track-y .scrollbar-thumb {
+        width: 4px;
+        background: #282f39; }
+  #main_content section#benefit #benefit_content_div {
+    width: 100%;
+    margin-top: -60px; }
+  #main_content section#job .box-scroll {
+    height: 427px;
+    padding-right: 50px; }
+  #main_content section#about .box-scroll {
+    height: 280px;
+    padding-right: 50px; }
+  #main_content section#about #about_footer_div {
+    margin-top: -68px; }
+    #main_content section#about #about_footer_div #logo_uniqlo_big {
+      position: absolute;
+      top: 50%;
+      margin-top: -83px;
+      left: -180px; }
+
+/*=============Responsive=============*/
+@media (max-width: 1500px) {
+  #main_content section#about #about_footer_div #logo_uniqlo_big {
+    top: 87%;
+    width: 99px;
+    left: unset; } }
+@media (max-width: 1199px) {
+  section#homepage {
+    height: 833px;
+    background-size: 1500px; }
+    section#homepage #homepage_content {
+      top: 90px;
+      width: 530px; }
+
+  #main_content {
+    height: 2000px;
+    background-size: 1500px; }
+    #main_content .redline_div #benefit_title {
+      font-size: 60px; }
+    #main_content .title {
+      font-size: 60px; }
+    #main_content section#benefit #benefit_content_div {
+      margin-top: -75px; }
+    #main_content section#job .box-scroll {
+      height: 358px; }
+    #main_content section#about .box-scroll {
+      height: 220px; }
+    #main_content section#about #about_footer_div {
+      margin-top: -57px; }
+      #main_content section#about #about_footer_div #logo_uniqlo_big {
+        top: 82%;
+        width: 106px; } }
+@media (max-width: 991px) {
+  li.nav-item a.nav-link {
+    top: unset; }
+
+  li.nav-item a.nav-link::after {
+    width: 50%; }
+
+  .form-control,
+  .upload_cv_label,
+  .span-click {
+    font-size: 15px; }
+
+  .input-file-reply {
+    font-size: 13px; }
+
+  .box-scroll {
+    font-size: 15px; }
+
+  section#homepage {
+    height: 722px;
+    background-size: 1300px;
+    background-position-x: -140px; }
+    section#homepage #homepage_content {
+      top: 40px;
+      width: 400px; }
+
+  #main_content {
+    height: 1550px;
+    background-size: 1500px; }
+    #main_content .redline_div #benefit_title {
+      font-size: 45px; }
+    #main_content .title {
+      font-size: 45px; }
+    #main_content section#benefit #benefit_content_div {
+      margin-top: -100px; }
+    #main_content section#job .box-scroll {
+      height: 257px; }
+    #main_content section#about .box-scroll {
+      height: 155px; }
+    #main_content section#about #about_footer_div {
+      margin-top: -42px; }
+      #main_content section#about #about_footer_div #logo_uniqlo_big {
+        top: 75%;
+        width: 117px; } }
+@media (max-width: 767px) {
+  .bt-register-now {
+    width: 120px; }
+
+  .slick-prev:before {
+    content: url("../images/slider/about_ico_prev.png") !important; }
+
+  .slick-next:before {
+    content: url("../images/slider/about_ico_next.png") !important; }
+
+  section#homepage {
+    background-position-x: -200px; }
+
+  #main_content {
+    height: 2900px;
+    background-size: 1200px; }
+    #main_content .redline_div #benefit_title {
+      font-size: 45px; }
+    #main_content .title {
+      font-size: 45px; }
+    #main_content section#benefit #benefit_content_div_mobile {
+      margin-top: -100px; }
+    #main_content section#job .box-scroll {
+      height: 200px; }
+    #main_content section#about .box-scroll {
+      height: 200px; }
+    #main_content section#about #about_footer_div {
+      margin-top: -31px; }
+      #main_content section#about #about_footer_div #logo_uniqlo_big {
+        top: 70%;
+        width: 124px; } }
+@media (max-width: 575px) {
+  .slick-prev {
+    left: 10px; }
+
+  .slick-next {
+    right: 10px; }
+
+  section#homepage {
+    background-size: 1400px; }
+    section#homepage #homepage_content {
+      position: relative;
+      width: unset; }
+      section#homepage #homepage_content #contact_form {
+        border-top: 8px solid #334149; }
+
+  #main_content {
+    height: unset;
+    background-size: 1200px; }
+    #main_content .redline_div #benefit_title {
+      font-size: 35px; }
+    #main_content .title {
+      font-size: 35px; }
+    #main_content section#benefit #benefit_content_div_mobile {
+      margin-top: -115px; }
+    #main_content section#about #about_footer_div {
+      margin-top: -24px; }
+      #main_content section#about #about_footer_div #logo_uniqlo_big {
+        top: 65%;
+        width: 132px; } }
+@media (max-width: 400px) {
+  .reg_ico {
+    height: 32px; } }
+
+/*# sourceMappingURL=style1.css.map */
